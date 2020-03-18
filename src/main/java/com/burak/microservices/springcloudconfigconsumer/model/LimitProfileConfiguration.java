@@ -11,11 +11,11 @@ public class LimitProfileConfiguration {
     Environment environment;
 
     public String getMinimum(){
-        return environment.getProperty("limits-service.minimum.value");
+        return environment.getProperty("limits-service[0].minimum");
     }
 
     public String getMaximum(){
-        return environment.getProperty("limits-service.maximum.value");
+        return environment.getProperty("limits-service[1].maximum");
     }
 
 }
